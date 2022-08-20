@@ -116,7 +116,7 @@ NULL
 }
 ```
 
-## DELETE `/delete`
+### DELETE `/delete`
 **Reqeust::**
 ```json
 {
