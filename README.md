@@ -41,3 +41,95 @@ $ go generate ./ent
 - JSON (SQL only).
 - Enum (SQL only).
 - Other (SQL only).
+
+## 👂🏻ToDos:
+- **Database:**
+  - [X] Create Schema
+  - [X] AutoMigrate(SQLite table)
+- **REST API:**
+  - [X] Create ToDos
+  - [X] Read ToDos
+  - [X] Update ToDos
+  - [X] Delete ToDos
+
+## Docs:
+### POST `/create`
+**Reqeust:**
+```json
+{
+    "todo": "hello! hyunsang"
+}
+```
+
+**Response:**
+```json
+{
+    "message": "성공적으로 새로운 항목을 추가하였습니다.",
+    "status": "success",
+    "success": true,
+    "time": "2022-08-20T21:24:47.336995+09:00"
+}
+```
+
+### POST `/read`
+**Reqeust:**
+```json
+NULL
+```
+
+**Response:**
+```json
+{
+    "datas": [
+        {
+            "id": 1,
+            "todo_uuid": "14653b7c-2083-11ed-bca8-acde48001122",
+            "todo": "hello! hyunsang",
+            "created_at": "2022-08-20T21:24:47.333822+09:00",
+            "edited_at": "2022-08-20T21:24:47.333822+09:00",
+            "deleted_at": "2022-08-20T21:24:47.333822+09:00"
+        }
+    ],
+    "message": "성공적으로 할 일을 가지고 왔습니다.",
+    "status": "error",
+    "success": true,
+    "time": "2022-08-20T21:25:24.606855+09:00"
+}
+```
+
+### POST `/update`
+**Reqeust:**
+```json
+{
+    "todo_uuid": "14653b7c-2083-11ed-bca8-acde48001122",
+    "todo": "Hello! HyunSang's"
+}
+```
+
+**Response:**
+```json
+{
+    "message": "정상적으로 할 일을 업로드 하였습니다.",
+    "status": "sucess",
+    "sucess": true,
+    "time": "2022-08-20T21:32:39.879555+09:00"
+}
+```
+
+## DELETE `/delete`
+**Reqeust::**
+```json
+{
+    "todo_uuid": "14653b7c-2083-11ed-bca8-acde48001122"
+}
+```
+
+**Response:**
+```json
+{
+    "message": "성공적으로 할 일을 삭제하였습니다.",
+    "status": "error",
+    "success": true,
+    "time": "2022-08-20T21:48:56.732876+09:00"
+}
+```
