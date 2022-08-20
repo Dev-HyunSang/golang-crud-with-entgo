@@ -9,7 +9,7 @@
 > - Database queries and graph traversals are easy to write.
 > - Simple to extend and customize using Go templates.
 
-## 🛠 Stack
+## Stack
 - [`gofiber/fiber`](https://gofiber.io/)
 - [`ent/ent` with Facebook](https://entgo.io/)
 - [`gofrs/uuid`](github.com/gofrs/uuid)
@@ -42,7 +42,7 @@ $ go generate ./ent
 - Enum (SQL only).
 - Other (SQL only).
 
-## 👂🏻ToDos:
+## ToDos:
 - **Database:**
   - [X] Create Schema
   - [X] AutoMigrate(SQLite table)
