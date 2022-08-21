@@ -23,6 +23,7 @@ func UpdateToDoHandler(c *fiber.Ctx) error {
 
 	upodateToDo, err := client.ToDo.Update().
 		SetTodo(req.ToDo).
+		SetDone(req.Done).
 		SetEditedAt(time.Now()).
 		Save(context.Background())
 	if err != nil {

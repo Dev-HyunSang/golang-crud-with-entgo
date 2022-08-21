@@ -33,6 +33,7 @@ func CreateTodoHandler(c *fiber.Ctx) error {
 		Create().
 		SetTodoUUID(todoUUID).
 		SetTodo(req.ToDo).
+		SetDone(false).
 		SetCreatedAt(time.Now()).
 		SetDeletedAt(time.Now()).
 		SetEditedAt(time.Now()).

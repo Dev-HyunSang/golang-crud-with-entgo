@@ -8,6 +8,7 @@ import (
 
 type ToDos struct {
 	ToDoUUID  uuid.UUID `json:"todo_uuid"`
+	Done      bool      `json:"bone"`
 	ToDo      string    `json:"todo"`
 	CreatedAt time.Time `json:"created_at"`
 	EditedAt  time.Time `json:"edited_at"`
