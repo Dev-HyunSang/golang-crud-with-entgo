@@ -128,7 +128,7 @@ NULL
 ```json
 {
     "message": "성공적으로 할 일을 삭제하였습니다.",
-    "status": "error",
+    "status": "success",
     "success": true,
     "time": "2022-08-20T21:48:56.732876+09:00"
 }
