@@ -91,7 +91,7 @@ NULL
         }
     ],
     "message": "성공적으로 할 일을 가지고 왔습니다.",
-    "status": "error",
+    "status": "success",
     "success": true,
     "time": "2022-08-20T21:25:24.606855+09:00"
 }
